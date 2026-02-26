@@ -1,0 +1,47 @@
+# ── Node.js ──────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# Build output
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ── Python ───────────────────────────────────────────
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Environment / Secrets ────────────────────────────
+# Keep .env files out of version control - they contain secrets
+backend/.env
+
+# ── Logs ─────────────────────────────────────────────
+backend/logs/
+*.log
+
+# ── OS / Editor ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Fabric / IPFS local data ─────────────────────────
+backend/fabric/wallet/
+backend/fabric/connection-profile.json
